@@ -1,0 +1,213 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Whispers</title>
+    <style>
+        body {
+            background-color: #cdcbcb;
+            color: #d9d6cf;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: baseline;
+            word-spacing: 0.3em;
+            align-items: center;
+            padding: 0.5em 2%;
+            background-color: #cdcbcb;
+            color: #111;
+            font-weight: bold;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+            font-family: 'Playfair Display', serif;
+            color: #691d1d;
+            padding-right: 850px;
+        }
+
+        nav a {
+            color: #a88c8c;
+            text-decoration: none;
+            margin: 0 0.5em;
+            margin-inline-start: 10px;
+            font-size: 1.23em;
+            font-family: 'Playfair Display', serif;
+            transition: color 0.3s ease;
+        }
+  
+        nav a:hover {
+            color: #691d1d;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+          background: none;
+          border: none;
+          font-size: 1.23em;
+          font-family: 'Playfair Display', serif;
+          color: #a88c8c;
+          font-weight: bold;
+          text-decoration: none;
+          cursor: pointer;
+          transition: color 0.3s ease;
+        }
+
+        .dropbtn:hover {
+            color: #691d1d;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #cdcbcb;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #a88c8c;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 1.1em;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color: #691d1d;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .image-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0px auto;
+            padding: 2px;
+            text-align: justify;
+            line-height: 1.6;
+            color: #5f2727;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+        }  
+        .comments-section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .comments-section h3 {
+            margin-top: 0;
+            font-size: 2em;
+            text-align: center;
+            color: #444;
+        }
+        .comment-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .comment-box input, .comment-box textarea {
+            width: 90%;
+            max-width: 500px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s, border-color 0.3s;
+            margin: 0 auto;
+        }
+        .comment-box input:focus, .comment-box textarea:focus {
+            background-color: #fff;
+            border-color: #888;
+            outline: none;
+        }
+        .comment-box textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .comment-box button {
+            padding: 12px 20px;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            align-self: flex-start;
+            transition: background-color 0.3s;
+        }
+        .comment-box button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DARK WHISPERS</h1>
+        <nav> 
+            <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/DARK%20WHISPER.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Investigations</button>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/FICTIONAL%20INVESTIGATIONS.html">fictional investigations</a>
+                    <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/real-life%20investigations.html">real-life investigations</a>
+                </div>
+            </div>
+
+            <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/ARTICLES.html">Articles</a>
+            <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/PODCASTS.html">Podcasts</a>
+        </nav>
+    </header>
+    <hr width="100%" color="black">
+    <div class="image-container">
+        <img src="article4.jpg" alt="Header Image">
+    </div>
+    <div class="content">
+      <P>Lie detection has been a fascinating yet controversial field within forensic science. With tools like the polygraph, investigators attempt to determine whether a suspect is telling the truth. But how reliable are these methods, and can they be fully trusted in a courtroom? This article explores the science behind lie detection, examining its techniques, psychological foundations, and the limitations that challenge its credibility.</P>
+      <P>Detecting lies is rooted in psychological principles that suggest physiological reactions can reveal when someone is being deceptive. Polygraphs, for instance, measure bodily responses such as heart rate, blood pressure, and skin conductivity, which are believed to change when someone is lying. In theory, these physiological shifts occur because lying induces stress, triggering the body’s fight-or-flight response. However, not everyone reacts to stress in the same way, making these readings complex and sometimes inconclusive.</P>
+      <P>In addition to polygraphs, other lie-detection techniques include microexpression analysis, which focuses on brief, involuntary facial expressions that may indicate hidden emotions, and voice stress analysis, which assesses slight changes in speech that could signal deceit. Experts use these techniques to interpret whether suspects are being truthful, often training themselves to recognize subtle cues that might otherwise go unnoticed. </P>
+      <P>Despite the appeal of these methods, lie detection is not foolproof. Polygraphs, for example, can produce false positives, meaning that a truthful person could be interpreted as lying simply due to nervousness. Similarly, skilled individuals or those with certain psychological traits, like sociopaths, may be able to lie without showing telltale signs. As a result, many legal systems treat polygraph results with caution, allowing them as supplementary evidence rather than definitive proof.</P>
+      <P>In conclusion, lie detection is a useful but limited tool in forensic science. While it offers investigators insights into suspects’ behaviors, its results must be interpreted with care, and additional evidence is often needed to corroborate findings. Understanding both the strengths and weaknesses of lie-detection techniques allows law enforcement to use them effectively without over-relying on their outcomes.</P>
+    </div>
+    <div class="comments-section">
+        <h3>Leave a Comment</h3>
+        <div class="comment-box">
+            <input type="text" placeholder="Your Name" required>
+            <textarea rows="4" placeholder="Write your comment here..." required></textarea>
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</body>
+</html>

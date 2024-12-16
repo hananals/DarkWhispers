@@ -1,0 +1,214 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Whispers</title>
+    <style>
+        body {
+            background-color: #cdcbcb;
+            color: #d9d6cf;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: baseline;
+            word-spacing: 0.3em;
+            align-items: center;
+            padding: 0.5em 2%;
+            background-color: #cdcbcb;
+            color: #111;
+            font-weight: bold;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+            font-family: 'Playfair Display', serif;
+            color: #691d1d;
+            padding-right: 850px;
+        }
+
+        nav a {
+            color: #a88c8c;
+            text-decoration: none;
+            margin: 0 0.5em;
+            margin-inline-start: 10px;
+            font-size: 1.23em;
+            font-family: 'Playfair Display', serif;
+            transition: color 0.3s ease;
+        }
+  
+        nav a:hover {
+            color: #691d1d;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+          background: none;
+          border: none;
+          font-size: 1.23em;
+          font-family: 'Playfair Display', serif;
+          color: #a88c8c;
+          font-weight: bold;
+          text-decoration: none;
+          cursor: pointer;
+          transition: color 0.3s ease;
+        }
+
+        .dropbtn:hover {
+            color: #691d1d;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #cdcbcb;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #a88c8c;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 1.1em;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color: #691d1d;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .image-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0px auto;
+            padding: 2px;
+            text-align: justify;
+            line-height: 1.6;
+            color: #5f2727;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+        }  
+        .comments-section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .comments-section h3 {
+            margin-top: 0;
+            font-size: 2em;
+            text-align: center;
+            color: #444;
+        }
+        .comment-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .comment-box input, .comment-box textarea {
+            width: 90%;
+            max-width: 500px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s, border-color 0.3s;
+            margin: 0 auto;
+        }
+        .comment-box input:focus, .comment-box textarea:focus {
+            background-color: #fff;
+            border-color: #888;
+            outline: none;
+        }
+        .comment-box textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .comment-box button {
+            padding: 12px 20px;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            align-self: flex-start;
+            transition: background-color 0.3s;
+        }
+        .comment-box button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DARK WHISPERS</h1>
+        <nav> 
+            <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/DARK%20WHISPER.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Investigations</button>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/FICTIONAL%20INVESTIGATIONS.html">fictional investigations</a>
+                    <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/real-life%20investigations.html">real-life investigations</a>
+                </div>
+            </div>
+
+            <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/ARTICLES.html">Articles</a>
+            <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/PODCASTS.html">Podcasts</a>
+        </nav>
+    </header>
+    <hr width="100%" color="black">
+    <div class="image-container">
+        <img src="article1.jpg" alt="Header Image">
+    </div>
+    <div class="content">
+       <p>Forensic psychology is a fascinating field that allows us to understand the psychology of criminals and the motivations driving them to commit crimes. Criminals, in many ways, are not so different from ordinary people. However, certain psychological and behavioral factors push them down a dark path when dealing with conflicts and desires. This article sheds light on the role of forensic psychology in understanding criminal minds, analyzing their motives, and providing examples of theories and cases that reveal how criminal motivations can form in diverse contexts.</p>
+       <p>When we think of crime, the first question that often comes to mind is: Why would someone commit such an act? Criminal motives vary greatly; some criminals are driven by anger, others by a strong desire for revenge, and some even by social pressures that push them toward violence. But as psychologists delve deeper into studying these motives, it has become clear that many criminals suffer from psychological disorders that play a significant role in their decisions. For example, a psychopath lacks empathy and remorse, with an inability to experience normal emotional interactions. Consequently, a psychopath might not see their crimes as wrong but rather as a justified means to achieve personal goals.</p>
+       <p>Many criminals also display narcissistic traits, which make them feel above the law or entitled to whatever they desire, by any means necessary. This type of thinking can lead to dehumanizing others, seeing them merely as "tools" to fulfill personal desires. It’s no surprise that many serial killers express this kind of thinking, feeling superior to others and acting as though they have the right to behave however they please. Such criminals are often capable of meticulously planning their crimes, which complicates the process of capturing them.</p>
+       <p>To illustrate this further, let's consider real-life examples of forensic psychology in notable cases. Ted Bundy, an infamous American serial killer known for his horrifying crimes, presented psychologists with key insights into understanding criminal psychology. Bundy appeared charming and friendly to those around him, hiding a dark mind brimming with a desire for control and dominance. His plans were detailed, and he was able to deceive many people due to his social intelligence. Forensic psychology helped investigators build a precise profile of his personality based on various clues, such as his letters, speech patterns, and reactions, which contributed to tracking his criminal methods and ultimately apprehending him.</p>
+       <p>Understanding a criminal's mentality not only helps explain what happened but also offers a way to predict possible future crimes. By studying the psychological factors that drive people to crime, investigators can assess the danger of certain behaviors and how they might escalate into full-blown criminal acts. Forensic psychology serves as a powerful tool for uncovering hidden motives that might not be immediately apparent, helping connect the dots between crimes committed by the same individual. In this sense, psychology becomes an essential tool in both fighting crime and preventing it.</p>
+       <p>In conclusion, forensic psychology provides a glimpse into a complex and mysterious world filled with minds controlled by unfamiliar drives and unexpected behaviors. Psychology here is not just a study of the human psyche; it’s an attempt to understand these mysterious minds that might seem out of reach to ordinary people. Delving into forensic psychology offers a way to uncover the secrets of the dark world within criminals' minds, helping to shape effective strategies for reducing crime and bringing criminals to justice. Yet, questions about the motives behind crime remain open, searching for new answers that may come through future psychological analysis.</p>
+    </div>
+    <div class="comments-section">
+        <h3>Leave a Comment</h3>
+        <div class="comment-box">
+            <input type="text" placeholder="Your Name" required>
+            <textarea rows="4" placeholder="Write your comment here..." required></textarea>
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</body>
+</html>

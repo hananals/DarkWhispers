@@ -1,0 +1,221 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Whispers</title>
+    <style>
+        body {
+            background-color: #cdcbcb;
+            color: #d9d6cf;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: baseline;
+            word-spacing: 0.3em;
+            align-items: center;
+            padding: 0.5em 2%;
+            background-color: #cdcbcb;
+            color: #111;
+            font-weight: bold;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+            font-family: 'Playfair Display', serif;
+            color: #691d1d;
+            padding-right: 850px;
+        }
+
+        nav a {
+            color: #a88c8c;
+            text-decoration: none;
+            margin: 0 0.5em;
+            margin-inline-start: 10px;
+            font-size: 1.23em;
+            font-family: 'Playfair Display', serif;
+            transition: color 0.3s ease;
+        }
+  
+        nav a:hover {
+            color: #691d1d;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+          background: none;
+          border: none;
+          font-size: 1.23em;
+          font-family: 'Playfair Display', serif;
+          color: #a88c8c;
+          font-weight: bold;
+          text-decoration: none;
+          cursor: pointer;
+          transition: color 0.3s ease;
+        }
+
+        .dropbtn:hover {
+            color: #691d1d;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #cdcbcb;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #a88c8c;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 1.1em;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color: #691d1d;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .image-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0px auto;
+            padding: 2px;
+            text-align: justify;
+            line-height: 1.6;
+            color: #5f2727;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+        }  
+        .comments-section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .comments-section h3 {
+            margin-top: 0;
+            font-size: 2em;
+            text-align: center;
+            color: #444;
+        }
+        .comment-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .comment-box input, .comment-box textarea {
+            width: 90%;
+            max-width: 500px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s, border-color 0.3s;
+            margin: 0 auto;
+        }
+        .comment-box input:focus, .comment-box textarea:focus {
+            background-color: #fff;
+            border-color: #888;
+            outline: none;
+        }
+        .comment-box textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .comment-box button {
+            padding: 12px 20px;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            align-self: flex-start;
+            transition: background-color 0.3s;
+        }
+        .comment-box button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DARK WHISPERS</h1>
+        <nav> 
+            <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/DARK%20WHISPER.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Investigations</button>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/FICTIONAL%20INVESTIGATIONS.html">fictional investigations</a>
+                    <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/real-life%20investigations.html">real-life investigations</a>
+                </div>
+            </div>
+
+            <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/ARTICLES.html">Articles</a>
+            <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/PODCASTS.html">Podcasts</a>
+        </nav>
+    </header>
+    <hr width="100%" color="black">
+
+    <div class="image-container">
+        <img src="play.jpg" alt="PLAYBACK">
+    </div>
+
+    <div class="content">
+        <p>Philip Marlowe sat in his office, nursing a cup of coffee that had gone cold. The city of Los Angeles stretched out beyond his window, shimmering in the haze of another lazy afternoon. Business was slow, but Marlowe knew that never lasted. Trouble had a way of finding him, and it came knocking that day in the form of Clyde Umney, a slick lawyer with a cryptic request.</p>
+        <p>Umney wanted Marlowe to follow a young woman, Eleanor King, who was heading to Esmeralda, a small seaside town. He didn’t offer much detail, only that the client—a mysterious man—was paying handsomely for Marlowe’s discretion. The detective took the job, not out of curiosity, but because bills don’t pay themselves.</p>
+        <p>Marlowe tracked Eleanor to Esmeralda, where she checked into a posh hotel under a fake name. She was striking—red hair, sharp eyes, and an aura of someone running from something, or someone. Marlowe watched from a distance, noting how she kept looking over her shoulder.</p>
+        <p>As Marlowe dug deeper, he uncovered whispers of blackmail. Eleanor was being pursued not only by Marlowe but by a shadowy figure named Larry Mitchell, a thug who seemed intent on extorting her for reasons unclear.</p>
+        <p>Esmeralda wasn’t the idyllic town it seemed. Beneath the surface, it teemed with secrets. Marlowe spoke with locals, including Henry Clarendon, the wealthy owner of the hotel, and Miss Betty Mayfield, a bartender with a sharp tongue and a soft spot for outsiders. They hinted at Eleanor’s past, but no one told the whole story.‍</p>
+        <p>When Marlowe finally confronted Eleanor, she was defiant yet scared. She confessed to being involved in a scandal with a powerful man who had taken his own life, leaving her to bear the weight of the fallout. She didn’t trust anyone—not Marlowe, not even herself.‍</p>
+        <p>The case took a dark turn when Larry Mitchell was found dead in a cheap motel. The police were quick to label it an accident, but Marlowe knew better. Someone wanted Mitchell out of the way, and it wasn’t Eleanor.</p>
+        <p>Eleanor disappeared shortly after, leaving Marlowe to untangle the web of lies. The truth? Clyde Umney’s client was the deceased man’s wife, desperate to bury the scandal before it ruined her family’s reputation. Eleanor had become the scapegoat, her life collateral damage in a game of power and control.</p>
+        <p>Marlowe tracked Eleanor down in a quiet coastal villa, where she was waiting for a ship to take her far away. In their final conversation, Marlowe urged her to stop running, to face her demons and clear her name. Eleanor, weary and resigned, thanked him but chose to disappear into the unknown.</p>
+        <p>As Marlowe watched the ship fade into the horizon, he lit a cigarette and thought about the tangled mess of human lives. Justice, in this case, was as elusive as the woman he’d been hired to follow. “In the end,” he muttered, “we all play our parts, whether we like it or not.”</p>
+        <p>The city called him back, another case waiting, another puzzle to solve. For Philip Marlowe, there was no playback—only the next chapter in the gritty, unforgiving story of Los Angeles</p>    
+    </div>
+    <div class="comments-section">
+        <h3>Leave a Comment</h3>
+        <div class="comment-box">
+            <input type="text" placeholder="Your Name" required>
+            <textarea rows="4" placeholder="Write your comment here..." required></textarea>
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</body>
+</html>

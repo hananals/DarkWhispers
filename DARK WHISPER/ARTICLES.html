@@ -1,0 +1,176 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Whispers</title>
+    <style>
+        body {
+            background-color: #cdcbcb;
+            color: #d9d6cf;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: baseline;
+            word-spacing: 0.3em;
+            align-items: center;
+            padding: 0.5em 2%;
+            background-color: #cdcbcb;
+            color: #111;
+            font-weight: bold;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+            font-family: 'Playfair Display', serif;
+            color: #691d1d;
+            padding-right: 850px;
+        }
+
+        nav a {
+            color: #a88c8c;
+            text-decoration: none;
+            margin: 0 0.5em;
+            font-size: 1.23em;
+            font-family: 'Playfair Display', serif;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #691d1d;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+          background: none;
+          border: none;
+          font-size: 1.23em;
+          font-family: 'Playfair Display', serif;
+          color: #a88c8c;
+          font-weight: bold;
+          text-decoration: none;
+          cursor: pointer;
+          transition: color 0.3s ease;
+        }
+
+        .dropbtn:hover {
+            color: #691d1d;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #cdcbcb;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #a88c8c;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 1.1em;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color: #691d1d;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 3em;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+        }
+
+        .images img {
+            width: 500px; 
+            height: 500px; 
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .text-section {
+            width: 50%;
+            margin-left: 50px;
+        }
+        .text-section ul {
+            list-style: disc;
+            padding-left: 20px;
+            color: #691d1d;
+        }
+        .text-section ul li {
+            margin: 15px 0;
+        }
+        .text-section ul li a {
+            text-decoration: none;
+            color: #a88c8c;
+            font-size: 22px;
+            font-weight: 450;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .text-section ul li a:hover {
+            color: #691d1d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DARK WHISPERS</h1>
+        <nav> 
+            <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/DARK%20WHISPER.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Investigations</button>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/FICTIONAL%20INVESTIGATIONS.html">fictional investigations</a>
+                    <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/real-life%20investigations.html">real-life investigations</a>
+                </div>
+            </div>
+
+            <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/ARTICLES.html">Articles</a>
+            <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/PODCASTS.html">Podcasts</a>
+        </nav>
+    </header>
+    <hr width="100%" color="black">
+    <div class="container">
+        <div class="images">
+            <img src="Home.jpg" class="left">
+        </div>
+        <div class="text-section">
+            <ul>
+                <li><a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/article1.html">What Happens Inside a Criminal's Mind?</a></li>
+                <li><a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/article2.html">How Forensic Science Helps Solve Crimes?</a></li>
+                <li><a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/article3.html">Common Mistakes in Criminal Investigations</a></li>
+                <li><a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/article4.html">The Science Behind Lie Detection: How Reliable Is It?</a></li>
+                <li><a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/article5.html">Famous Criminal Profilers: The Minds Behind the Cases</a></li>
+                <li><a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/article6.html">Psychology of Victimology: Understanding the Impact on Crime Victims</a></li>
+                <li><a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/article7.html">The Evolution of Forensic Technology Over The Decades</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

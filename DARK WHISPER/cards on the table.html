@@ -1,0 +1,259 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Whispers</title>
+    <style>
+        body {
+            background-color: #cdcbcb;
+            color: #d9d6cf;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: baseline;
+            word-spacing: 0.3em;
+            align-items: center;
+            padding: 0.5em 2%;
+            background-color: #cdcbcb;
+            color: #111;
+            font-weight: bold;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+            font-family: 'Playfair Display', serif;
+            color: #691d1d;
+            padding-right: 850px;
+        }
+
+        nav a {
+            color: #a88c8c;
+            text-decoration: none;
+            margin: 0 0.5em;
+            margin-inline-start: 10px;
+            font-size: 1.23em;
+            font-family: 'Playfair Display', serif;
+            transition: color 0.3s ease;
+        }
+  
+        nav a:hover {
+            color: #691d1d;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+          background: none;
+          border: none;
+          font-size: 1.23em;
+          font-family: 'Playfair Display', serif;
+          color: #a88c8c;
+          font-weight: bold;
+          text-decoration: none;
+          cursor: pointer;
+          transition: color 0.3s ease;
+        }
+
+        .dropbtn:hover {
+            color: #691d1d;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #cdcbcb;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #a88c8c;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 1.1em;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color: #691d1d;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .image-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0px auto;
+            padding: 2px;
+            text-align: justify;
+            line-height: 1.6;
+            color: #5f2727;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+        }  
+        .suspects-list {
+         margin: 20px 0;
+         color: #5f2727; /* لون النص الافتراضي */
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         line-height: 1.8;
+        }
+
+        .suspects-list .suspect-name {
+         color: #691d1d; /* لون مختلف للأسماء */
+         font-weight: bold;
+         font-size: 1.1em;
+         margin-top: 10px;
+         display: flex;
+         align-items: center;
+        }
+
+        .suspects-list .suspect-number {
+          color: #5f2727; /* لون التعداد */
+          font-weight: bold;
+           margin-right: 8px;
+        }
+
+        .suspects-list dd {
+          margin: 0 0 10px 20px;
+        }
+
+        .comments-section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .comments-section h3 {
+            margin-top: 0;
+            font-size: 2em;
+            text-align: center;
+            color: #444;
+        }
+        .comment-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .comment-box input, .comment-box textarea {
+            width: 90%;
+            max-width: 500px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s, border-color 0.3s;
+            margin: 0 auto;
+        }
+        .comment-box input:focus, .comment-box textarea:focus {
+            background-color: #fff;
+            border-color: #888;
+            outline: none;
+        }
+        .comment-box textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .comment-box button {
+            padding: 12px 20px;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            align-self: flex-start;
+            transition: background-color 0.3s;
+        }
+        .comment-box button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DARK WHISPERS</h1>
+        <nav> 
+            <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/DARK%20WHISPER.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Investigations</button>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/FICTIONAL%20INVESTIGATIONS.html">fictional investigations</a>
+                    <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/real-life%20investigations.html">real-life investigations</a>
+                </div>
+            </div>
+
+            <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/ARTICLES.html">Articles</a>
+            <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/PODCASTS.html">Podcasts</a>
+        </nav>
+    </header>
+    <hr width="100%" color="black">
+
+    <div class="image-container">
+        <img src="Cards.jpg" alt="Cards On The Table">
+    </div>
+
+    <div class="content">
+        <p>Mr. Shaitana, a wealthy and enigmatic host with a flair for the dramatic, threw a dinner party like no other. Among his exclusive guest list were four individuals with dark pasts and four of the sharpest minds in crime detection, including the legendary Hercule Poirot.</p>
+        <p>Shaitana, known for his love of secrets, made a chilling claim over dinner: he enjoyed collecting murderers—those who had gotten away with their crimes. He suggested that among the guests were four individuals who had committed the perfect murder. Poirot, intrigued but cautious, listened intently.</p>
+        <p>After dinner, Shaitana proposed a game of bridge. The four suspects—Dr. Roberts, a charming physician; Major Despard, a stoic adventurer; Mrs. Lorrimer, an elegant widow; and Miss Anne Meredith, a timid young woman—played at one table. Poirot and the detectives played at another.</p>
+        <p>The evening took a deadly turn when, after the bridge game ended, Shaitana was found dead, stabbed with a jeweled dagger.</p>
+        <p>With the suspects confined to the house, Poirot took charge, assisted by Superintendent Battle, Colonel Race, and Ariadne Oliver, a famous (and eccentric) mystery novelist. Poirot declared, “To solve this crime, one must understand the psychology of the murderer. A bridge game reveals much about its players.”</p>
+        <p>The investigation focused on the four suspects, each with a motive and opportunity to kill Shaitana.</p>
+        <p>The Suspects:</p>
+        <dl class="suspects-list">
+         <dt class="suspect-name"><span class="suspect-number">1.</span> Dr. Roberts</dt>
+         <dd>A confident and affable man, Roberts denied any dark deeds. But whispers of a patient’s sudden death and a potential inheritance cast suspicion on him.</dd>
+         <dt class="suspect-name"><span class="suspect-number">2.</span> Major Despard</dt>
+         <dd>A man of action, Despard had tales of dangerous expeditions. Could a mysterious death in the jungle link back to him?</dd>
+         <dt class="suspect-name"><span class="suspect-number">3.</span> Mrs. Lorrimer</dt>
+         <dd>Calm and composed, Mrs. Lorrimer revealed nothing but skill during the bridge game. Yet, her poise hinted at hidden depths.</dd>
+         <dt class="suspect-name"><span class="suspect-number">4.</span> Anne Meredith</dt>
+         <dd>Sweet and unassuming, Anne seemed incapable of violence. But her nervousness and an unexplained poisoning in her past suggested otherwise.</dd>
+        </dl>
+        <p>Poirot delved into the psychology of the suspects, using their behavior during the bridge game as a lens. He examined their bids, their strategies, and even their seating arrangements. “A person’s character,” he mused, “is revealed in how they play a game.”</p>
+        <p>Clues emerged. A fragment of conversation, a discarded letter, and a missing pair of gloves all pointed to a deliberate act of murder. Poirot questioned the suspects, gently coaxing out inconsistencies and unraveling their secrets.</p>
+        <p>In a dramatic gathering, Poirot pieced together the puzzle. The murderer was Mrs. Lorrimer, who had killed Shaitana out of fear he would expose her past crime. Years ago, she had murdered her husband, and Shaitana’s veiled comments had terrified her into taking drastic action.</p>
+        <P>However, Poirot unveiled an even darker twist: Anne Meredith had also committed murder in her past and tried to cover her tracks during the investigation. Her guilt, while unrelated to Shaitana’s death, was exposed as Poirot meticulously dismantled her lies.‍</P>
+        <p>Poirot closed the case with his characteristic brilliance, reflecting on the complexities of human nature. “To know the truth, one must understand the soul,” he declared.</p>
+        <p>With the culprits brought to justice, the surviving guests and detectives left the house, shaken but in awe of Poirot’s genius.‍</p>  
+    </div>
+    <div class="comments-section">
+        <h3>Leave a Comment</h3>
+        <div class="comment-box">
+            <input type="text" placeholder="Your Name" required>
+            <textarea rows="4" placeholder="Write your comment here..." required></textarea>
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</body>
+</html>

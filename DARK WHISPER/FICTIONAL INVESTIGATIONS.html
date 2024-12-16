@@ -1,0 +1,207 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Whispers</title>
+    <style>
+        body {
+            background-color: #cdcbcb;
+            color: #d9d6cf;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: baseline;
+            word-spacing: 0.3em;
+            align-items: center;
+            padding: 0.5em 2%;
+            background-color: #cdcbcb;
+            color: #111;
+            font-weight: bold;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+            font-family: 'Playfair Display', serif;
+            color: #691d1d;
+            padding-right: 850px;
+        }
+
+        nav a {
+            color: #a88c8c;
+            text-decoration: none;
+            margin: 0 0.5em;
+            margin-inline-start: 10px;
+            font-size: 1.23em;
+            font-family: 'Playfair Display', serif;
+            transition: color 0.3s ease;
+        }
+  
+        nav a:hover {
+            color: #691d1d;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+          background: none;
+          border: none;
+          font-size: 1.23em;
+          font-family: 'Playfair Display', serif;
+          color: #a88c8c;
+          font-weight: bold;
+          text-decoration: none;
+          cursor: pointer;
+          transition: color 0.3s ease;
+        }
+
+        .dropbtn:hover {
+            color: #691d1d;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #cdcbcb;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #a88c8c;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 1.1em;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color: #691d1d;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .character-container {
+            display: flex;
+            justify-content: center;
+            gap: 150px;
+            margin-top: 50px;
+        }
+    
+        .character {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            width: 250px;
+        }
+        .character img {
+            width: 100%;
+            height: auto;
+            max-height: 300;
+        }
+        .character h2 {
+            font-size: 30px;
+            margin-top: 10px;
+            color: #691d1d;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .character ul{
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left;
+            margin-top: 10px;
+        }
+        .character li{
+            margin-bottom: 5px;
+            color:#691d1d;
+        }    
+
+        .stories a {
+            display: block;
+            color: #a88c8c;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 23px;
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+        .stories a:hover {
+            color: #691d1d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DARK WHISPERS</h1>
+        <nav> 
+            <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/DARK%20WHISPER.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Investigations</button>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/FICTIONAL%20INVESTIGATIONS.html">fictional investigations</a>
+                    <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/real-life%20investigations.html">real-life investigations</a>
+                </div>
+            </div>
+
+            <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/ARTICLES.html">Articles</a>
+            <a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/PODCASTS.html">Podcasts</a>
+        </nav>
+    </header>
+    <hr width="100%" color="black">
+    <div class="character-container">
+        <div class="character">
+            <img src="sherlock.jpg" alt="Sherlock Holmes">
+            <h2>Sherlock Holmes</h2>
+            <div class="stories a">
+                <ul>
+                <li><a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/the%20valley%20of%20fear.html">The Valley of Fear</a></li>
+               <li><a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/THE%20SIGN%20OF%20FOUR.html">The Sign of Four</a></li>
+                <li><a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/The%20Adventure%20of%20The%20Dancing%20Men.html">The Adventure of the Dancing Men</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="character">
+            <img src="poirot.jpg" alt="Hercule Poirot">
+            <h2>Hercule Poirot</h2>
+            <div class="stories a">
+                <ul>
+                <li><a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/The%20murder%20of%20Roger%20Ackroyd.html">The Murder of Roger Ackroyd</a></li>
+                <li><a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/the%20A.B.C%20murders.html">The A.B.C Murders</a></li>
+                <li><a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/cards%20on%20the%20table.html">Cards on the Table</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="character">
+            <img src="marlowe.jpg" alt="Philip Marlowe">
+            <h2>Philip Marlowe</h2>
+            <div class="stories a">
+                <ul>
+                <li><a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/the%20big%20sleep.html">The Big Sleep</a></li>
+                <li><a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/simple%20art%20of%20mudrer.html">Simple Art of Murder</a></li>
+                <li><a href="file:///C:/Users/nania/Desktop/DARK%20WHISPER/playback.html">Playback</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
